@@ -18,6 +18,7 @@
 
 @import './nullstyle.scss';
 @import './stylesheet.scss';
+@import '../../node_modules/swiper/swiper-bundle.css';
 
 // @import './swiper-bundle.min.scss';
 
@@ -26,7 +27,7 @@
 @import './blocks/block3_main.scss';
 @import './blocks/block4_slider.scss';
 @import './blocks/block5_brands.scss';
-// @import 'block';
+@import './blocks/block6_fix.scss';
 // @import 'block';
 // @import 'block';
 // @import 'block';

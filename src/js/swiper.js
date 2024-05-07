@@ -1,3 +1,6 @@
+// import Swiper, { Pagination } from 'swiper'
+import Swiper, { Pagination } from '../../node_modules/swiper/swiper-bundle'
+
 let m = window.matchMedia('(max-width: 767px)')
 
 if (m.matches) {

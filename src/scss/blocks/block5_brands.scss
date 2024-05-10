@@ -119,10 +119,11 @@
   }
   .swiper-pagination {
     height: 12px;
-    width: 100%;
+    width: 204px;
     display: flex;
     justify-content: space-between;
-    padding: 0 58px;
+    margin: -10px auto 0 auto;
+    position: relative;
 
     @media (min-width: 768px) {
       display: none;

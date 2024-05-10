@@ -1,0 +1,201 @@
+.price {
+  &__title {
+    font-family: 'TT Lakes Regular';
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    color: #7e7e82;
+    text-transform: uppercase;
+    border-top: solid 1px #d9fff5;
+    background-image: linear-gradient(to right, #f8f8f8, white);
+
+    @media (min-width: 320px) {
+      padding: 16px;
+    }
+
+    @media (min-width: 768px) {
+      padding-left: 24px;
+    }
+
+    @media (min-width: 320px) {
+      padding-left: 32px;
+    }
+  }
+  &__titleNotForMobile {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      font-family: 'TT Lakes Medium';
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+
+      padding: 31px 200px 16px 40px;
+
+      display: flex;
+      justify-content: space-between;
+      :nth-child(1) {
+        position: absolute;
+        left: 40px;
+      }
+      :nth-child(2) {
+        margin-left: 388px;
+        margin-right: 10px;
+      }
+      :nth-child(3) {
+        margin-right: 10px;
+      }
+    }
+    @media (min-width: 1440px) {
+      padding: 31px 332px 16px 56px;
+
+      :nth-child(1) {
+        position: absolute;
+        left: 40px;
+      }
+      :nth-child(2) {
+        margin-left: 388px;
+        margin-right: 10px;
+      }
+      :nth-child(3) {
+        margin-right: 10px;
+      }
+    }
+  }
+  .swiper-wrapper {
+    display: flex;
+    @media (min-width: 768px) {
+      width: auto;
+      flex-direction: column;
+      background-color: #ffffff;
+      border-radius: 6px;
+      margin: 0 24px;
+    }
+    @media (min-width: 1440px) {
+      margin: 0 32px;
+    }
+  }
+
+  .swiper-slide {
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    color: #1b1c21;
+    width: auto;
+    @media (max-width: 768px) {
+      background-color: #ffffff;
+      border-radius: 6px;
+      margin: 16px 8px 0 8px;
+      padding: 16px;
+      width: 260px;
+      height: 200px;
+      :nth-child(2) {
+        margin: 4px 0 16px 0;
+      }
+      :nth-child(4) {
+        margin: 4px 0 16px 0;
+      }
+      :nth-child(5) {
+        margin: 0 0 4px 0;
+        display: inline-block;
+      }
+      :nth-child(5) {
+        display: inline-block;
+      }
+      :nth-child(7) {
+        display: inline-block;
+      }
+      :nth-child(8) {
+        display: inline-block;
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+      }
+    }
+    @media (min-width: 768px) {
+      margin: 0 16px;
+      padding: 23px 0;
+      border-bottom: 1px solid #eaeaea;
+      display: flex;
+      justify-content: space-between;
+      :nth-child(2) {
+        position: absolute;
+        left: 0;
+      }
+      :nth-child(4) {
+        margin-left: 388px;
+        margin-right: 10px;
+      }
+      :nth-child(7) {
+        margin-right: 10px;
+      }
+    }
+  }
+  .priceSlide__title {
+    font-family: 'TT Lakes Medium';
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .swiper-pagination {
+    height: 12px;
+    width: 108px;
+    display: flex;
+    justify-content: space-between;
+    margin: 26px auto 0 auto;
+    position: relative;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #979797;
+  }
+  &__more {
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+    min-width: 288px;
+
+    margin: 16px;
+    @media (min-width: 768px) {
+      width: 421px;
+      margin: 24px 0 16px 24px;
+    }
+    @media (min-width: 1440px) {
+      margin: 32px 0 16px 32px;
+    }
+  }
+  &__get {
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0 100px 40px 16px;
+    @media (min-width: 768px) {
+      margin: 0 0 47px 24px;
+    }
+    @media (min-width: 1440px) {
+      margin: 0 0 50px 32px;
+    }
+  }
+}

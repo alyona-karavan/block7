@@ -1,4 +1,5 @@
 let burger = document.querySelector('.header-top__burger')
+let closeButton = document.querySelector('.burger')
 let slider = document.querySelector('.slider')
 let wrapper = document.querySelector('.wrapper')
 let overlay = document.querySelector('.overlay-tablet')
@@ -14,16 +15,22 @@ if (xl.matches) {
       overlay.style.display = 'block'
       evt.preventDefault()
       evt.stopPropagation()
-
+      slider.style.animationName = 'move-tablet'
       slider.style.display = 'block'
     }
   })
 
+  function passed() {
+    overlay.style.display = 'none'
+    slider.style.display = 'none'
+  }
   document.addEventListener('click', function (evt) {
-    if (!slider.contains(evt.target)) {
-      // slider.style.animationName = 'move-close-tablet';
-      overlay.style.display = 'none'
-      slider.style.display = 'none'
+    if (!slider.contains(evt.target) || closeButton) {
+      slider.style.animationName = 'move-close-tablet'
+      setTimeout(passed, 500)
+
+      // overlay.style.display = 'none'
+      // slider.style.display = 'none'
     }
   })
 }

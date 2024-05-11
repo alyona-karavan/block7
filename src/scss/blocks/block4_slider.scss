@@ -29,14 +29,15 @@
   z-index: 11;
   margin: 0 auto;
   display: none;
+  box-shadow: 30px 0 40px 0 #dddee6;
 
   @media (min-width: 360px) {
     width: 360px;
   }
 
   @media (max-width: 1439px) {
-    animation-name: move-tablet;
-    animation-duration: 0.7s;
+    // animation-name: move-tablet;
+    animation-duration: 0.5s;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
   }

@@ -1,4 +1,8 @@
 .price {
+  .swiper {
+    margin: 0;
+    width: 100%;
+  }
   &__title {
     font-family: 'TT Lakes Regular';
     font-size: 16px;
@@ -82,6 +86,7 @@
     letter-spacing: 0.2px;
     line-height: 18px;
     color: #1b1c21;
+    height: auto;
     width: auto;
     @media (max-width: 768px) {
       background-color: #ffffff;
@@ -119,6 +124,7 @@
       border-bottom: 1px solid #eaeaea;
       display: flex;
       justify-content: space-between;
+      // width: 720px;
       :nth-child(2) {
         position: absolute;
         left: 0;
@@ -131,6 +137,9 @@
         margin-right: 10px;
       }
     }
+    // @media (min-width: 1440px) {
+    //   width: 1056px;
+    // }
   }
   .priceSlide__title {
     font-family: 'TT Lakes Medium';

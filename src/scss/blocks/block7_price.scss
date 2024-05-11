@@ -199,3 +199,19 @@
     }
   }
 }
+.after-price {
+  display: flex;
+
+  @media (max-width: 768px) {
+    padding-bottom: 16px;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0px;
+      width: 24px;
+      height: 260px;
+      background: linear-gradient(to right, transparent, #f8f8f8);
+      z-index: 1;
+    }
+  }
+}

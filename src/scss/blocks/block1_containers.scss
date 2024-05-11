@@ -1,10 +1,12 @@
 body {
   background-color: #f8f8f8;
+
   font-family: 'TT Lakes Regular';
   color: #1b1c21;
   box-sizing: border-box;
   @media (min-width: 1440px) {
     background-color: #ffffff;
+    height: auto;
   }
 }
 .wrapper {

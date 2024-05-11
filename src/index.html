@@ -129,7 +129,7 @@
           <div class="slider-footer">
             <section class="contacts">
               <div class="footer-icons">
-                <a class="call" href="">
+                <div class="call" >
                   <svg
                     width="40"
                     height="40"
@@ -145,8 +145,8 @@
                       fill="white"
                     />
                   </svg>
-                </a>
-                <a class="chat" href="">
+                </div>
+                <div class="chat" href="">
                   <svg
                     width="40"
                     height="40"
@@ -179,7 +179,7 @@
                     </mask>
                     <g mask="url(#mask0_0_2408)"></g>
                   </svg>
-                </a>
+                </div>
                 <a class="profile" href="">
                   <svg
                     width="40"
@@ -294,7 +294,7 @@
                     </svg>
                   </a>
                 </div>
-                <a class="header-top__call" href="">
+                <div class="header-top__call" >
                   <svg
                     width="40"
                     height="40"
@@ -310,8 +310,8 @@
                       fill="white"
                     />
                   </svg>
-                </a>
-                <a class="header-top__chat" href="">
+                </div>
+                <div class="header-top__chat" href="">
                   <svg
                     width="40"
                     height="40"
@@ -344,7 +344,7 @@
                     </mask>
                     <g mask="url(#mask0_0_1880)"></g>
                   </svg>
-                </a>
+                </div>
                 <a class="header-top__profile" href="">
                   <svg
                     width="40"
@@ -552,7 +552,7 @@
               <section class="fix-brands">
                 <h2 class="fix-brands__title">Ремонт различных видов техники</h2>
   
-                <div class="after">
+                <div class="after-brands">
                   <div class="swiper fix-swiper">
                     <!-- Additional required wrapper -->
                     <ul class="swiper-wrapper fixSwiper-wrapper">
@@ -643,7 +643,7 @@
                   </div>
                 
   
-                <div class="after">
+                <div class="after-price">
                   <div class="swiper">
                     <!-- Additional required wrapper -->
                     <ul class="swiper-wrapper">
@@ -721,6 +721,43 @@
               <p>Политика конфиденциальности</p>
               <p>Информация, размещенная на данной странице, не является публичной офертой</p>
             </section>
+
+            <!-- modal-feedback -->
+            <div  class="modal-feedback">
+              <div class="modal-content">
+                <img class="close" src="./img/close.png" alt="Закрыть">
+                
+                <form class="feedback-form">
+                  <h2 class="privacy__title">Обратная связь</h2>
+                  <input type="text" id="name" placeholder="Имя" required>
+                  <input type="tel" id="phone" placeholder="Телефон" required>
+                  <input type = "email" id = "email" placeholder = "Электронная почта" required>
+                  <textarea id="message" placeholder="Сообщение" required></textarea>
+                  <p class="privacy__grey">Нажимая “отправить”, вы даете согласие на <span class="privacy__pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="privacy__pink">политикой конфиденциальности</span></p>
+                  <button class="send" type="submit"><img src="./img/кнопка отправить.png" alt="Отправить"></button>
+                </form>
+              </div>
+            </div>
+            
+            <div class="blur"></div>
+
+             <!-- modal-call -->
+             <div  class="modal-call">
+              <div class="modal-content">
+                <img class="close-call" src="./img/close.png" alt="Закрыть">
+                
+                <form class="call-form">
+                  <h2 class="privacy__title">Заказать звонок</h2>
+                
+                  <input type="tel" id="phone" placeholder="Телефон" required>
+                  
+                  <p class="privacy__grey">Нажимая “отправить”, вы даете согласие на <span class="privacy__pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="privacy__pink">политикой конфиденциальности</span></p>
+                  <button class="send-call" type="submit"><img src="./img/кнопка отправить.png" alt="Отправить"></button>
+                </form>
+              </div>
+            </div>
+            
+            <div class="blur-call"></div>
             </main>
           </div>
         </div>

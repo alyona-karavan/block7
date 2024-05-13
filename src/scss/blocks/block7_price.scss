@@ -29,47 +29,37 @@
     display: none;
     @media (min-width: 768px) {
       display: flex;
+      justify-content: space-between;
       font-family: 'TT Lakes Medium';
       font-size: 14px;
       line-height: 16px;
       color: #7e7e82;
 
-      padding: 31px 200px 16px 40px;
+      padding: 31px 40px 16px 40px;
 
-      display: flex;
-      justify-content: space-between;
       :nth-child(1) {
-        position: absolute;
-        left: 40px;
+        width: 55%;
+        margin-right: 24px;
       }
       :nth-child(2) {
-        margin-left: 388px;
-        margin-right: 10px;
+        width: 12%;
+        margin-right: 22px;
       }
       :nth-child(3) {
+        width: 33%;
         margin-right: 10px;
       }
     }
     @media (min-width: 1440px) {
-      padding: 31px 332px 16px 56px;
-
-      :nth-child(1) {
-        position: absolute;
-        left: 40px;
-      }
-      :nth-child(2) {
-        margin-left: 388px;
-        margin-right: 10px;
-      }
-      :nth-child(3) {
-        margin-right: 10px;
-      }
+      padding: 31px 56px 16px 56px;
     }
   }
   .swiper-wrapper {
     display: flex;
+    height: 200px;
     @media (min-width: 768px) {
       width: auto;
+      height: auto;
       flex-direction: column;
       background-color: #ffffff;
       border-radius: 6px;
@@ -88,7 +78,7 @@
     color: #1b1c21;
     height: auto;
     width: auto;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       background-color: #ffffff;
       border-radius: 6px;
       margin: 16px 8px 0 8px;
@@ -123,18 +113,25 @@
       padding: 23px 0;
       border-bottom: 1px solid #eaeaea;
       display: flex;
-      justify-content: space-between;
+
       // width: 720px;
       :nth-child(2) {
-        position: absolute;
-        left: 0;
+        // position: absolute;
+        // left: 0;
+        width: 55%;
+        margin-right: 24px;
       }
       :nth-child(4) {
-        margin-left: 388px;
-        margin-right: 10px;
+        width: 12%;
+        margin-right: 22px;
       }
       :nth-child(7) {
-        margin-right: 10px;
+        width: 15%;
+        margin-right: 20px;
+      }
+      :nth-child(8) {
+        width: 18%;
+        text-align: right;
       }
     }
     // @media (min-width: 1440px) {
@@ -155,7 +152,7 @@
     width: 108px;
     display: flex;
     justify-content: space-between;
-    margin: 26px auto 0 auto;
+    margin: 46px auto 0 auto;
     position: relative;
 
     @media (min-width: 768px) {
@@ -212,7 +209,6 @@
   display: flex;
 
   @media (max-width: 768px) {
-    padding-bottom: 16px;
     &::after {
       content: '';
       position: absolute;
